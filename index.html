@@ -2,58 +2,71 @@
 <html>
 
 <head>
-  <title>Servicio Técnico</title>
+  <title>Servicio Técnico - Thomás Padial</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
     }
 
     .card {
-      background-color: white;
+      background: white;
       color: black;
-      padding: 25px;
-      margin: 50px auto;
       border-radius: 15px;
-      width: 320px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
     h1 {
       margin-bottom: 5px;
     }
 
-    p {
-      color: #444;
+    h2 {
+      color: gray;
+      margin-top: 0;
+    }
+
+    .servicios {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .servicios p {
+      margin: 5px 0;
     }
 
     button {
-      background-color: #25D366;
+      background: #25D366;
       color: white;
       border: none;
       padding: 12px;
       border-radius: 8px;
       font-size: 16px;
-      margin-top: 10px;
+      margin-top: 15px;
+      width: 100%;
       cursor: pointer;
     }
 
     button:hover {
-      background-color: #1ebe5d;
+      background: #1ebe5d;
     }
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
+    .extra {
+      margin-top: 15px;
+      font-size: 14px;
+      color: gray;
     }
   </style>
 
@@ -61,18 +74,28 @@
 
 <body>
 
-  <div class="card">
-    <h1>Servicio Técnico</h1>
-    <h2>Thomás Padial</h2>
+  <div class="container">
+    <div class="card">
 
-    <p>Reparación de PC a domicilio</p>
-    <p>Formateo • Limpieza • Componentes • Inspección</p>
+      <h1>Servicio Técnico</h1>
+      <h2>Thomás Padial</h2>
 
-    <a href="https://wa.me/541173610086" target="_blank">
-      <button>Contactame por WhatsApp</button>
-    </a>
+      <p>Reparación de PC a domicilio</p>
 
-    <img src="https://via.placeholder.com/300x200">
+      <div class="servicios">
+        <p>✔ Formateo de Windows</p>
+        <p>✔ Instalación de programas</p>
+        <p>✔ Limpieza interna</p>
+        <p>✔ Diagnóstico</p>
+      </div>
+
+      <a href="https://wa.me/541173610086" target="_blank">
+        <button>Contactar por WhatsApp</button>
+      </a>
+
+      <p class="extra">Atención rápida • Zona cercana</p>
+
+    </div>
   </div>
 
 </body>
